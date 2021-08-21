@@ -1,0 +1,56 @@
+/* <!-- <----------------main section style--------------->   */
+.mainsection {
+  display: flex;
+}
+.computer {
+  height: 433px;
+  width: 510px;
+}
+.container {
+  margin-top: 50px;
+}
+.text {
+  margin-left: 150px;
+}
+
+/* <!-- <----------------input fild style--------------->   */
+
+.memoryinput {
+  padding: 6px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  margin-left: 2px;
+  margin-top: 6px;
+}
+
+/* <!-- <----------------total section style--------------->   */
+
+.totalcection {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.lasthr {
+  border: 2px solid black;
+  width: 318px;
+}
+.promoaria {
+  margin-top: 30px;
+}
+.prompinput {
+  padding: 4px;
+  width: 240px;
+  border-radius: 4px;
+}
+.inputbutton {
+  padding: 3px;
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  width: 100px;
+}
+.lasttotal {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}

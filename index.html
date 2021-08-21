@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assingment-5</title>
+    
+   <!-- <----------------bootstrap css--------------->  
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+ 
+     <!-- <----------------extranal css--------------->  
+
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <!-- <----------------header section--------------->  
+    <header>
+    </header>
+
+    <!-- <----------------main section--------------->  
+
+    <main >
+  <section class="container">
+    <div class="mainsection">
+        <div>
+         <img class="computer" src="images/mac.png" alt="" srcset="">
+         </div>
+        <div class="text">
+            <h1 class="mb-4">Customize your <span class="text-info">Blue</span> 24-inch iMac with Apple M1 chip.</h1>
+         <p>
+            This extraordinary design is only possible thanks to M1, the first system on a chip for Mac. It makes iMac so thin and compact that it fits in more places than ever.M1 integrates the processor, graphics, memory, and more onto a single chip. That let us put an entire computer into a space so small it practically disappears. </p>
+
+             <!-- <----------------memory button--------------->  
+
+             <div class="mt-5">
+                 <h4>Memory</h4>
+                 <button onclick="memoryfunction1()" class="memoryinput btn-outline-dark">
+                    8GB unified memory
+                 </button>
+                 <button onclick="memoryfunction2()" class="memoryinput btn-outline-dark">
+                    16GB unified memory
+                 </button>
+                 </div>
+
+                 <!-- <----------------storage button--------------->  
+
+             <div class="mt-5">
+                <h4>Storage</h4>
+                <button onclick="storagefunction1()" class="memoryinput btn-outline-dark">
+                  256GB ssd storage 8GB 
+                </button>
+                <button onclick="stroagefunction2()" class="memoryinput btn-outline-dark">
+                    512GB ssd storage 8GB 
+                </button> 
+                <button onclick="stroagefunction3()" class="memoryinput btn-outline-dark">
+                   1TB ssd storage 8GB 
+                </button> 
+             </div>
+
+             <!-- <----------------delivery button---------------> 
+
+             <div class="mt-5">
+                <h4>Choose your delivery option</h4>
+                <button onclick="deliveryfunction1()" class="memoryinput btn-outline-dark">
+                FRYDAY Aug 25 FREE prime delivery
+                </button>
+                <button onclick="deliveryfunction2()" class="memoryinput btn-outline-dark">
+                    FRYDAY Aug 21 Delivery charge $20
+                </button> 
+                
+             </div>
+
+             <!-- <----------------total section--------------->  
+
+             <div class="totalcection">
+                 <div>
+                     <h6>Base price</h6>
+                     <hr>
+                     <h6>Extra memory Cost</h6>
+                     <hr>
+                     <h6>Extra storage Cost</h6>
+                     <hr>
+                     <h6>Delivery Charge</h6>
+                     <hr class="lasthr">
+                     <h5>Total Price</h5>
+                    
+                 </div>
+                 <div>
+                     <h6>$<span id="beseprice">1299</span></h6>
+                     <hr>
+                     <h6>$<span id="memoryfild">0</span></h6>
+                     <hr>
+                     <h6>$<span id="stroagefild">0</span></h6>
+                     <hr>
+                     <h6>$<span id="deliveryfild">0</span></h6>
+                     <hr class="lasthr">
+                     <h5>$<span id="totalfild">1299</span></h5>
+                 </div>
+             </div>
+
+             <!-- <----------------promo code--------------->  
+
+             <div class="promoaria">
+                 <h6>add promo code</h6>
+                 <input id="promoinput" class="prompinput" type="text">
+                 <button  id="promobutton" class="inputbutton btn-outline-danger">Apply</button>
+                 
+             </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- <----------------last total--------------->  
+
+    <footer>
+        <h1 class="lasttotal">Total: $<span id="totalprice">1299</span></h1>
+    </footer>
+  </section>
+    </main>
+
+    <!-- <-----------------javascript file-------------  -->
+
+   <script src="js/mack-book.js"></script>
+ 
+  
+</body>
+</html>
