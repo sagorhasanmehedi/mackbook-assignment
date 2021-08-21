@@ -45,7 +45,7 @@ function deliveryfunction2() {
   total();
 }
 
-// <----------------total update--------------->
+// <----------------total update function--------------->
 
 function total() {
   const memoryFiforTotal = parseFloat(
@@ -61,8 +61,15 @@ function total() {
   const bestprice = parseFloat(document.getElementById("beseprice").innerText);
   const totalfild = (document.getElementById("totalfild").innerText =
     memoryFiforTotal + storajeFildforTotal + deliveryFildForTotal + bestprice);
-  // <----------------grand total update--------------->
-  document.getElementById("totalprice").innerText = totalfild;
+  // <----------------grand total update --------------->
+  grandtotal(totalfild);
+}
+
+// <----------------grand total update function--------------->
+
+function grandtotal(x) {
+  const grandtotal = document.getElementById("totalprice");
+  grandtotal.innerText = x;
 }
 
 // <----------------promo code input--------------->
